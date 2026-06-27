@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SQL Query Generator - Case Study</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #020617 100%); }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .text-gradient { background: linear-gradient(to right, #purple-400, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen py-12 px-6">
+    <div class="max-w-4xl mx-auto">
+        
+        <a href="../index.html#projects" class="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-purple-400 transition mb-8">
+            <i class="fa-solid fa-arrow-left"></i> Return to Main Dashboard
+        </a>
+
+        <header class="mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-gradient">AI SQL Query Generator (Text-to-SQL RAG)</h1>
+            <p class="text-lg text-slate-400">Natural Language Relational Database Interfaces with Agentic Error Validation Loops.</p>
+        </header>
+
+        <div class="glass-card rounded-xl p-4 flex flex-wrap gap-4 items-center justify-between mb-12 text-sm">
+            <div class="flex gap-4">
+                <a href="#" target="_blank" class="text-purple-400 hover:underline flex items-center gap-1"><i class="fa-brands fa-github"></i> Source Code</a>
+                <a href="#" target="_blank" class="text-indigo-400 hover:underline flex items-center gap-1"><i class="fa-solid fa-arrow-up-right-from-square"></i> Active Deployment</a>
+            </div>
+            <span class="text-xs bg-slate-800 px-3 py-1 rounded text-slate-400">Production Review Grade</span>
+        </div>
+
+        <div class="space-y-12">
+            
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">1. Problem Statement</h2>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Non-technical business stakeholders frequently require immediate structured database insights but lack deep SQL query translation knowledge, creating operational engineering backlogs.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">2. Solution Overview</h2>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Designed an automated natural language pipeline that safely converts conversational prompts into complex SQL code. The platform validates query structures against database schemas before executing them safely.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">3. Technical Architecture</h2>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                    The platform reads schema rules, passes structural parameters into LLM prompts, generates raw queries, test-executes them inside isolated database scopes, and handles exceptions cleanly.
+                </p>
+                <div class="w-full glass-card rounded-xl p-6 flex justify-center items-center bg-slate-950/40">
+                    <div class="text-center">
+                        <p class="text-xs font-mono text-purple-400">[ User Prompt ] ➔ [ Schema Prompt Injection ] ➔ [ LLM SQL Gen ] ➔ [ SQL Validator Loop ] ➔ [ Relational Database Output ]</p>
+                        <p class="text-[10px] text-slate-500 mt-2">Architecture Schema Map Link</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">4. Individual Contribution</h2>
+                <ul class="list-disc pl-5 text-sm text-slate-300 space-y-2">
+                    <li>Developed dynamic data injection prompts that supply schema definitions without leaking private database records.</li>
+                    <li>Built an agentic auto-correction engine that automatically rewrites syntactically invalid SQL queries.</li>
+                    <li>Optimized SQL execution boundaries to secure data against relational database injections.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">5. Technology Stack</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded-md text-xs font-mono">OpenAI API</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded-md text-xs font-mono">SQLite / MySQL</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded-md text-xs font-mono">LangChain Components</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded-md text-xs font-mono">Streamlit Core</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">6. Challenges Faced</h2>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    <strong>Challenge:</strong> Complex analytical requests containing nested subqueries frequently caused query logic errors.<br>
+                    <strong>Resolution:</strong> Implemented few-shot chain-of-thought prompt templates to guide the model through multi-step relational reasoning tasks.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">7. Key Learnings</h2>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Gained a deeper understanding of deterministic system guardrails, prompt security principles, and robust error handling when processing large tabular tracking data.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">8. Impact & Results</h2>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Enabled non-technical end users to instantly extract analytical summaries, lowering technical query turnaround delays significantly.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold mb-3 text-purple-300">9. Media Showcase</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="h-40 bg-slate-900/60 rounded-xl border border-slate-800 flex items-center justify-center text-xs text-slate-500">[ Query Generation UI View ]</div>
+                    <div class="h-40 bg-slate-900/60 rounded-xl border border-slate-800 flex items-center justify-center text-xs text-slate-500">[ Complete Execution Screencast ]</div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>

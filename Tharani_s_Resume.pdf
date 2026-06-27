@@ -1,0 +1,46 @@
+THARANI S
+Data Analyst | Machine Learning & Generative AI
+Bengaluru, India  |  +91-9944840993  |  tharasiva98@gmail.com  |  LinkedIn  |  github.com/Tharanisiva98
+PROFESSIONAL SUMMARY
+Data Scientist Intern with hands-on, project-based experience in Python, SQL, Machine Learning, and Generative AI (LangChain, RAG, FAISS) — including a text-to-SQL chatbot and a multi-document Q&A assistant. Skilled in data analysis and Power BI/Excel reporting. Seeking a Data Analyst or Junior Data Scientist role to apply these skills to real business problems.
+•	Completed 5+ independent ML and Generative AI projects spanning predictive analytics, NLP, and computer vision.
+•	Built RAG-based chatbots and AI agents that connect to live relational databases for real-time data querying.
+
+TECHNICAL SKILLS
+Programming: Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), SQL
+Machine Learning: Linear & Logistic Regression, Decision Trees, Random Forest, SVM, Naive Bayes, k-NN, XGBoost, AdaBoost, PCA, K-Means & Hierarchical Clustering, Feature Engineering, Hyperparameter Tuning
+Deep Learning: Artificial Neural Networks (ANN), CNN, RNN
+Generative AI & LLMs: LangChain, FAISS, Google Gemini API, Retrieval-Augmented Generation (RAG), Prompt Engineering, Text-to-SQL
+Data Analysis & Visualization: Exploratory Data Analysis, Data Cleaning, Power BI (DAX, Power Query, Dashboards), MS Excel (VLOOKUP, Pivot Tables)
+Databases: MySQL, Oracle SQL —Joins, Subqueries, Normalization, Views, Query Optimization
+Tools: Git, GitHub, VS Code, Jupyter Notebook, MySQL Workbench
+Statistics: Descriptive & Inferential Statistics, Probability, Hypothesis Testing, Correlation & Covariance, Evaluation Metrics (Accuracy, Precision, Recall, F1-score, RMSE)
+
+INTERNSHIP EXPERIENCE
+Data Scientist Intern — QSpiders	Aug 2025 – Present
+Software Testing Training Institute  |  Bengaluru, India
+•	Build end-to-end data analysis pipelines using Python, SQL optimization, and machine learning to convert raw datasets into actionable insights.
+•	Develop and tune regression and classification models, applying feature engineering and hyperparameter optimization to improve predictive performance.
+•	Apply deep learning methods (ANN, CNN) for pattern recognition tasks as part of applied training projects.
+•	Design Generative AI solutions, including RAG-based document retrieval and LLM-powered question answering.
+
+PROJECTS
+Multi-Document RAG Research Assistant
+Python, LangChain, FAISS, LLMs
+•	Built a multi-document RAG research assistant using semantic search, text chunking, embeddings, and FAISS vector storage to generate grounded, LLM-powered answers from uploaded documents
+AI SQL Query Generator (Text-to-SQL RAG Chatbot)
+Python, SQL, LangChain, MySQL
+•	Built a text-to-SQL chatbot that uses prompt engineering and RAG to convert natural-language questions into accurate SQL queries against a live MySQL database, reducing manual query writing for routine lookups.
+Autonomous AI Agent for Data Analysis
+Python, Pandas, Scikit-learn
+•	Built a Python-based agent that automates exploratory data analysis, data cleaning, and descriptive statistics on tabular datasets, implemented a Natural Query interface, allowing users to ask questions without writing code.
+
+PROFESSIONAL EXPERIENCE (PRE-IT)
+Quality Engineer 
+TVS Motor Company, Hosur                                                                                                     2017 – 2020
+
+EDUCATION
+Bachelor of Engineering — Electronics and Communication Engineering	2022 – 2025
+Er. Perumal Manimekalai College of Engineering, Hosur  |  CGPA: 7.5/10
+Diploma — Electrical and Electronics Engineering	2015 – 2017
+Seshasayee Institute of Technology, Trichy  |  CGPA: 7.79/10

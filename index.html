@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharani S | AI Engineer Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 50%, #020617 100%);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-button {
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+            transform: translateY(-2px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen overflow-x-hidden selection:bg-indigo-500 selection:text-white">
+
+    <div id="loader" class="fixed inset-0 z-50 bg-slate-950 flex items-center justify-center transition-opacity duration-500">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-indigo-500"></div>
+    </div>
+
+    <nav class="fixed top-0 left-0 w-full z-40 bg-slate-950/60 backdrop-blur-md border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-gradient">Tharani S</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#education" class="hover:text-indigo-400 transition">Education</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-xl focus:outline-none" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-card absolute top-16 left-0 w-full flex flex-col p-6 space-y-4 text-center">
+            <a href="#about" class="hover:text-indigo-400 transition">About</a>
+            <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+            <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+            <a href="#education" class="hover:text-indigo-400 transition">Education</a>
+            <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-24 px-6 relative">
+        <div class="text-center max-w-3xl z-10" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Hi, I'm <span class="text-gradient">Tharani S</span></h1>
+            <h2 class="text-xl md:text-2xl font-semibold text-indigo-400 mb-6 h-8"><span id="typewriter"></span></h2>
+            <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed">
+                Build intelligent AI applications using Machine Learning, Generative AI, LLMs, Retrieval-Augmented Generation (RAG), Python, SQL, and Automation.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="glow-button px-6 py-3 rounded-full bg-indigo-600 text-white font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-rocket"></i> View Projects
+                </a>
+                <a href="https://github.com/Tharanisiva98" target="_blank" class="glow-button px-6 py-3 rounded-full glass-card text-white font-medium flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/tharani-sivaraman2345" target="_blank" class="glow-button px-6 py-3 rounded-full glass-card text-white font-medium flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="Tharani_s_Resume.pdf" target="_blank" class="glow-button px-6 py-3 rounded-full glass-card text-white font-medium flex items-center gap-2">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">About <span class="text-gradient">Me</span></h2>
+        <div class="glass-card rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-48 h-48 rounded-2xl overflow-hidden border-2 border-indigo-500/30 shrink-0 bg-slate-800">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">About <span class="text-gradient">Me</span></h2>
+        <div class="glass-card rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-48 h-48 rounded-2xl overflow-hidden border-2 border-indigo-500/30 shrink-0 bg-slate-800">
+                <img src="images/profile.jpg" alt="Tharani S" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500'">
+            </div>
+            <div class="space-y-4">
+                <p class="text-slate-300 leading-relaxed">
+                    With a foundational background in <strong>Electronics and Communication Engineering</strong>, I began my professional journey as a Quality Engineer at TVS Motor Company. Driven by data and its underlying patterns, I successfully transitioned into the realm of Artificial Intelligence and Data Science.
+                </p>
+                <p class="text-slate-300 leading-relaxed">
+                    I am highly passionate about solving core real-world challenges through engineered systems. My primary focus revolves around constructing production-level <strong>Generative AI applications, LLM agents, scalable RAG frameworks, NLP architectures, and Predictive Machine Learning pipelines</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">Technical <span class="text-gradient">Skillset</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card rounded-xl p-6 hover:border-indigo-500/40 transition">
+                <h3 class="text-lg font-bold text-indigo-400 mb-4"><i class="fa-solid fa-code mr-2"></i> Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Python</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">SQL</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">JavaScript</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">HTML5 / CSS3</span>
+                </div>
+            </div>
+            <div class="glass-card rounded-xl p-6 hover:border-purple-500/40 transition">
+                <h3 class="text-lg font-bold text-purple-400 mb-4"><i class="fa-solid fa-cubes mr-2"></i> Frameworks</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Streamlit</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">FastAPI</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Flask</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Pandas / NumPy</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Scikit-Learn</span>
+                </div>
+            </div>
+            <div class="glass-card rounded-xl p-6 hover:border-pink-500/40 transition">
+                <h3 class="text-lg font-bold text-pink-400 mb-4"><i class="fa-solid fa-brain mr-2"></i> Artificial Intelligence</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">OpenAI / LLMs</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">LangChain</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">HuggingFace</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">FAISS / ChromaDB</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Advanced RAG</span>
+                </div>
+            </div>
+            <div class="glass-card rounded-xl p-6 hover:border-emerald-500/40 transition">
+                <h3 class="text-lg font-bold text-emerald-400 mb-4"><i class="fa-solid fa-database mr-2"></i> Infra & DB</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">MySQL</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">SQLite</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Git / GitHub</span>
+                    <span class="bg-slate-800/80 px-3 py-1 rounded-md text-xs font-medium text-slate-300">Vercel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">Featured <span class="text-gradient">Projects</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="glass-card rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col group border-slate-800">
+                <div class="h-48 bg-slate-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="RAG Assistant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition">Multi-Document RAG Research Assistant</h3>
+                        <p class="text-sm text-slate-400 mb-4 line-clamp-3">
+                            An intelligent semantic engine mapping vector embeddings across multi-format, unstructured document payloads for deterministic business insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-indigo-300 font-medium">LangChain</span>
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-indigo-300 font-medium">ChromaDB</span>
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-indigo-300 font-medium">Python</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="projects/multi-document-rag.html" class="text-center py-2 text-xs font-semibold rounded bg-indigo-600 hover:bg-indigo-700 transition text-white">View Details</a>
+                        <a href="#" target="_blank" class="text-center py-2 text-xs font-semibold rounded glass-card hover:bg-slate-800 transition text-white"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="text-center py-2 text-xs font-semibold rounded glass-card hover:bg-slate-800 transition text-indigo-400"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col group border-slate-800">
+                <div class="h-48 bg-slate-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800" alt="Text-to-SQL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition">AI SQL Query Generator (Text-to-SQL)</h3>
+                        <p class="text-sm text-slate-400 mb-4 line-clamp-3">
+                            A complex natural-language-to-SQL compiler backed by agentic validation loops to extract secure insights from structured relational engines.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-purple-300 font-medium">OpenAI API</span>
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-purple-300 font-medium">SQLite</span>
+                            <span class="bg-slate-900 px-2.5 py-1 rounded text-xs text-purple-300 font-medium">Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="projects/text-to-sql-rag.html" class="text-center py-2 text-xs font-semibold rounded bg-purple-600 hover:bg-purple-700 transition text-white">View Details</a>
+                        <a href="#" target="_blank" class="text-center py-2 text-xs font-semibold rounded glass-card hover:bg-slate-800 transition text-white"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="text-center py-2 text-xs font-semibold rounded glass-card hover:bg-slate-800 transition text-purple-400"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="py-24 px-6 max-w-4xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">Education & <span class="text-gradient">Milestones</span></h2>
+        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+            
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 group-hover:scale-125 transition"></div>
+                <div class="absolute -left-32 top-1 hidden md:block text-sm font-semibold text-slate-400">2025 - Present</div>
+                <div class="glass-card rounded-xl p-6">
+                    <span class="md:hidden text-xs font-bold text-indigo-400 block mb-1">2025 - Present</span>
+                    <h3 class="text-lg font-bold text-slate-100">Data Scientist Intern</h3>
+                    <p class="text-sm text-indigo-400 font-medium mb-2">QSpiders</p>
+                    <p class="text-sm text-slate-400">Developing commercial machine learning components and agentic processing architectures across Python environments.</p>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-purple-500 group-hover:scale-125 transition"></div>
+                <div class="absolute -left-32 top-1 hidden md:block text-sm font-semibold text-slate-400">2022 - 2025</div>
+                <div class="glass-card rounded-xl p-6">
+                    <span class="md:hidden text-xs font-bold text-purple-400 block mb-1">2022 - 2025</span>
+                    <h3 class="text-lg font-bold text-slate-100">Quality Engineer / Assistant Engineer</h3>
+                    <p class="text-sm text-purple-400 font-medium mb-2">TVS Motor Company / Wabtec Corporation</p>
+                    <p class="text-sm text-slate-400">Managed complex product parameters, standard operations, and root cause quality investigations before pivoting entirely into data science.</p>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-pink-500 group-hover:scale-125 transition"></div>
+                <div class="absolute -left-32 top-1 hidden md:block text-sm font-semibold text-slate-400">Graduation</div>
+                <div class="glass-card rounded-xl p-6">
+                    <span class="md:hidden text-xs font-bold text-pink-400 block mb-1">Graduation</span>
+                    <h3 class="text-lg font-bold text-slate-100">Bachelor of Engineering (BE)</h3>
+                    <p class="text-sm text-pink-400 font-medium mb-2">Electronics and Communication Engineering</p>
+                    <p class="text-sm text-slate-400">Acquired foundational processing intuition, hardware execution architectures, and core mathematical modeling logic.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-12 text-center tracking-tight">Get In <span class="text-gradient">Touch</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">Recruiters and engineering leads can reach out via direct communication or dropping a notification below.</p>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="flex items-center gap-4"><i class="fa-solid fa-envelope text-indigo-400 w-5"></i><span>your-email@example.com</span></div>
+                        <div class="flex items-center gap-4"><i class="fa-solid fa-phone text-indigo-400 w-5"></i><span>+91 XXXXX XXXXX</span></div>
+                        <div class="flex items-center gap-4"><i class="fa-solid fa-location-dot text-indigo-400 w-5"></i><span>Bengaluru, India</span></div>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-8">
+                    <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 transition"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <form class="glass-card rounded-2xl p-8 space-y-4" action="#" method="POST">
+                <div>
+                    <label class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-2">Full Name</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition text-slate-100">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-2">Email Address</label>
+                    <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition text-slate-100">
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-2">Message</label>
+                    <textarea rows="4" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition text-slate-100"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition text-sm font-semibold tracking-wide glow-button">Send Notification</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-900 bg-slate-950/40 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Tharani Sivaraman. All engineering solutions reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
